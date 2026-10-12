@@ -1,0 +1,35 @@
+version: "v0.4"
+
+project:
+  name: "Expected syzygies and Fröberg’s conjecture through degree 2d"
+  description: >-
+    Formalizes Theorem 1.1 of Expected Syzygies and Fröberg’s Conjecture through
+    Degree 2d: assuming the Expected Syzygy Conjecture over a characteristic-zero
+    field, general degree-d forms have the positively truncated Hilbert function
+    predicted by Fröberg’s conjecture in every degree through 2d. The implication
+    holds for every positive number of variables and degree and every number of
+    generators, with one common nonempty open set for all the stated degrees.
+  authors: ["Vlado Vojdanovski"]
+  license: "Apache-2.0"
+  responsible_maintainers: ["Vlado Vojdanovski"]
+
+classification:
+  arxiv: ["math.AC", "math.AG"]
+  msc2020: ["13D40", "13D02", "14N05"]
+
+sources:
+  - title: "Expected Syzygies and Fröberg’s Conjecture through Degree 2d"
+    type: "paper"
+    authors: ["Vlado Vojdanovski"]
+    location: "Theorem 1.1"
+    relationship: "formalizes"
+
+automation:
+  methods:
+    - method: "agent"
+      models: ["GPT-6"]
+      framework: "OpenAI Codex"
+      tool_setup: "AI-assisted Lean proof development with coordinated Codex agents."
+
+review:
+  status: "agent-reviewed"
